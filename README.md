@@ -30,7 +30,7 @@ pip install -r requirements.txt
 ### Data
 The dataset used in this research is available via Dropbox. You can download it using the following link:
 
-```https://drive.google.com/drive/folders/1wtWFnv60K214CaXVBdXKQhL3GyxWVnhN?usp=sharing```
+[Link to Google Drive](https://drive.google.com/drive/folders/1wtWFnv60K214CaXVBdXKQhL3GyxWVnhN?usp=sharing)
 
 After downloading, place the dataset files in the data/ folder within this repository.
 
