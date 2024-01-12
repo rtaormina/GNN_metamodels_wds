@@ -1,0 +1,8 @@
+matplotlib==3.5.1
+networkx==2.6.3
+numpy==1.21.2
+PyYAML==6.0
+scikit_learn==1.0.2
+torch==1.10.1
+torch_geometric==2.0.3
+wntr==0.4.0

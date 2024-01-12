@@ -1,0 +1,79 @@
+# Experiment configuration files
+
+# experiment name (determines output folder)
+exp_name: GNN_8000
+# data folder
+data_folder: ./data
+
+# seeds for reproducibility
+seeds:
+    np: 4320
+    torch: 69
+
+# networks to use
+networks: ['FOS','BAK','PES','MOD','RuralNetwork','KL']
+#networks: ['KL']
+# networks: ['PES']
+
+# number of training samples to use (if < than total)
+tra_num: 8000
+
+
+# model architectures to train
+algorithms:
+    # - MLP
+    - GNN_ChebConv    
+
+# # hyper params for each model
+hyperParams:
+    # MLP:
+        # hid_channels:
+            # - 64
+            # - 128
+            # - 256            
+        # num_layers:
+            # - 1
+            # - 2
+            # - 3   
+            # - 4
+        # dropout_rate:
+            # - 0
+            # - 0.1
+            # - 0.25
+            
+    GNN_ChebConv:
+        hid_channels:
+            # - 32
+            - 64
+            - 128
+            # - 256
+        edge_channels:
+            # - 16
+            - 32
+            - 64
+            # - 128
+        CC_K:
+            - 3
+            # - 4
+            - 6
+        depth:
+            - 1            
+            - 2
+            - 3
+        dropout_rate:
+            - 0
+        emb_aggr:            
+            - 'mean'
+            
+            
+adamParams:
+    lr: 0.001
+    weight_decay: 0
+    
+
+trainParams:    
+    num_epochs: 30
+    batch_size: 128
+    
+lossParams:
+        alpha: 0        

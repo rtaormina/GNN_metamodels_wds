@@ -1,0 +1,27 @@
+# Dataset configuration
+{
+# networks names
+dataset_names : ['RuralNetwork'],
+# dataset_names : ['BAK'],
+# number of trials
+n_trials : [10000],
+
+# min, max, step for diameters range
+diameter_range : [0, 1.5, 0.025],
+# min, max, step for roughness range
+roughness_range : [50, 150, 1],
+# min, max, step for demand range
+base_demand_range : [0, 0.101, 0.0001],
+
+# diameter, roughness, and demand range, tendency for larger diameters, demand multplier for each network
+FOS : [10, 20, 50, 1, 1],
+BAK : [10, 20, 50, 1, 0.25],
+MOD : [10, 20, 50, 3, 1],
+PES : [10, 20, 50, 1, 1],
+BIN : [20, 20, 50, 4, 1],
+BLA : [10, 20, 50, 1, 1],
+KL  : [10, 20, 20, 4, 1],
+ZJ  : [10, 20, 50, 3, 0.02],
+Jilin : [10, 20, 50, 3, 0.02],
+RuralNetwork : [20, 50, 50, 4, 1]
+}
